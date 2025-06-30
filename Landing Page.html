@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Generation Media - Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /*
+         * BRAND PALETTE: The Illuminated Manuscript
+         * Chronicler's Green (#2f4645)
+         * Illumination Orange (#d9753a)
+         * Archival Parchment (#f3f1ef)
+        */
+        body {
+            background-color: #f3f1ef;
+            font-family: 'Jost', sans-serif;
+            color: #2f4645;
+        }
+        .font-headline {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-chronicler-green { background-color: #2f4645; }
+        .text-chronicler-green { color: #2f4645; }
+        .bg-illumination-orange { background-color: #d9753a; }
+        .text-illumination-orange { color: #d9753a; }
+        .border-illumination-orange { border-color: #d9753a; }
+        .hover\:bg-orange-dark:hover { background-color: #c46a34; }
+    </style>
+</head>
+<body class="antialiased">
+
+     <!-- Main Container -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
+
+        <div class="max-w-4xl w-full text-center space-y-12">
+
+            <!-- Header Section with Logo -->
+            <header class="flex flex-col items-center">
+                <img 
+                    src="https://github.com/CrossFWPR/FGM-Logo/blob/main/Asset%202_Texture.png?raw=true"
+                    alt="Fourth Generation Media Logo" 
+                    class="w-48 h-48 md:w-56 md:h-56 object-contain"
+                >
+                <!-- The H1 title is no longer needed as it is part of the logo image -->
+            </header>
+
+            <!-- Manifesto Section -->
+            <main>
+                <h2 class="font-headline text-3xl md:text-4xl font-bold text-chronicler-green">The Cycle Breaks Here.</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-lg md:text-xl text-chronicler-green/80 leading-relaxed">
+                    We publish stories about the ones who inherit the consequences. We champion the heroes who have the strength to face the fallout, dismantle a flawed past, and build a new foundation from the ruins. This is the home for stories built to last.
+                </p>
+            </main>
+
+            <!-- Call to Action Section -->
+            <section class="bg-white/50 rounded-lg p-6 md:p-10 shadow-sm border border-black/5">
+                <h3 class="font-headline text-2xl font-bold text-chronicler-green">Become a Founding Reader.</h3>
+                <p class="mt-2 text-chronicler-green/80">Join our community to get exclusive updates, creator spotlights, and be the first to know when submissions open for our debut anthology, *Inheritance #0*.</p>
+                
+                <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+                    <!-- Discord Button -->
+                    <a href="https://discord.gg/TgxzB6CsAM" class="w-full sm:w-auto bg-chronicler-green text-white font-bold py-3 px-8 rounded-lg text-center hover:bg-chronicler-green/90 transition-colors duration-300 flex items-center justify-center gap-2" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.icons8.com/m_rounded/512/FFFFFF/discord-logo.png" alt="Discord Logo" class="w-6 h-6" />
+                        Join the Discord
+                    </a>
+                    
+                    <!-- Email Form -->
+                    <form name="subscribe" method="POST" data-netlify="true" class="w-full sm:w-auto flex-grow flex flex-col sm:flex-row gap-2">
+                        <input type="hidden" name="form-name" value="subscribe" />
+                        <input type="email" name="email" placeholder="your.email@example.com" class="flex-grow w-full bg-white border border-chronicler-green/20 rounded-lg py-3 px-4 text-chronicler-green placeholder-chronicler-green/50 focus:outline-none focus:ring-2 focus:ring-illumination-orange" required>
+                        <button type="submit" class="bg-illumination-orange text-white font-bold py-3 px-8 rounded-lg hover:bg-orange-dark transition-colors duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-center text-sm text-chronicler-green/60 pt-8">
+                <p>&copy; 2025 Fourth Generation Media. All Rights Reserved.</p>
+                <p class="mt-1">Built after the collapse.</p>
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
