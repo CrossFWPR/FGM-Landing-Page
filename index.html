@@ -68,10 +68,11 @@
                         Join the Discord
                     </a>
                     
-                    <!-- Email Form -->
-                    <form name="subscribe" method="POST" data-netlify="true" class="w-full sm:w-auto flex-grow flex flex-col sm:flex-row gap-2">
+                    <!-- Netlify Email Subscribe Form -->
+                    <form name="subscribe" method="POST" data-netlify="true" action="/thank-you.html" class="w-full sm:w-auto flex-grow flex flex-col sm:flex-row gap-2 items-center">
                         <input type="hidden" name="form-name" value="subscribe" />
-                        <input type="email" name="email" placeholder="your.email@example.com" class="flex-grow w-full bg-white border border-chronicler-green/20 rounded-lg py-3 px-4 text-chronicler-green placeholder-chronicler-green/50 focus:outline-none focus:ring-2 focus:ring-illumination-orange" required>
+                        <label class="sr-only" for="subscribe-email">Your Email:</label>
+                        <input id="subscribe-email" type="email" name="email" placeholder="your.email@example.com" class="flex-grow w-full bg-white border border-chronicler-green/20 rounded-lg py-3 px-4 text-chronicler-green placeholder-chronicler-green/50 focus:outline-none focus:ring-2 focus:ring-illumination-orange" required>
                         <button type="submit" class="bg-illumination-orange text-white font-bold py-3 px-8 rounded-lg hover:bg-orange-dark transition-colors duration-300">
                             Subscribe
                         </button>
